@@ -33,7 +33,7 @@
     
     [super viewDidLoad];
     [self configureSubViews];
-    [self setCard:[self.presenter requestCard]];
+    [self.presenter requestCard];
     _isCardFlipped = NO;
 }
 

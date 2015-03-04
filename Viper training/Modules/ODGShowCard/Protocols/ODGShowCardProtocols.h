@@ -16,8 +16,6 @@
 
 @protocol ODGShowCardModuleDelegate <NSObject>
 
-//- (void)addModuleDidCancelAddAction;
-//- (void)addModuleDidSaveAddAction;
 
 @end
 
@@ -47,8 +45,7 @@
 /**
  * Add here your methods for communication VIEWCONTROLLER -> PRESENTER
  */
-- (ODGCard *)requestCard;
-- (void)setCard:(ODGCard *)card;
+- (void)requestCard;
 
 @end
 

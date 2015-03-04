@@ -8,9 +8,9 @@
 
 @implementation ODGShowCardPresenter
 
-- (ODGCard *)requestCard {
+- (void)requestCard {
     
-    return self.cardToShow;
+    [self.view setCard:self.cardToShow];
 }
 
 - (void)setCard:(ODGCard *)card {

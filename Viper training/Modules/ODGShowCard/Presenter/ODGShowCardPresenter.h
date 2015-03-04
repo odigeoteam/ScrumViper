@@ -11,6 +11,8 @@
 
 @interface ODGShowCardPresenter : NSObject <ODGShowCardPresenterProtocol, ODGShowCardInteractorOutputProtocol>
 
+- (void)setCard:(ODGCard *)card;
+
 @property (nonatomic, strong) ODGCard *cardToShow;
 
 @property (nonatomic, weak) id <ODGShowCardViewProtocol> view;

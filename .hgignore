@@ -1,0 +1,27 @@
+syntax: glob
+# Mac OS
+#
+
+.DS_Store
+
+# Xcode
+#
+build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata
+
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+
+# CocoaPods
+#
+Pods/
+
+# Crashlytics
+#
+Crashlytics.framework/

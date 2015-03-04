@@ -1,0 +1,870 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		224CD1901A77AFB600933C32 /* ODGSettingsDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 224CD1821A77AFB600933C32 /* ODGSettingsDataManager.m */; };
+		224CD1911A77AFB600933C32 /* ODGSettingsInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 224CD1851A77AFB600933C32 /* ODGSettingsInteractor.m */; };
+		224CD1921A77AFB600933C32 /* ODGSettingsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 224CD1871A77AFB600933C32 /* ODGSettingsPresenter.m */; };
+		224CD1931A77AFB600933C32 /* ODGSettingsWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 224CD1891A77AFB600933C32 /* ODGSettingsWireframe.m */; };
+		224CD1941A77AFB600933C32 /* ODGSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224CD18E1A77AFB600933C32 /* ODGSettingsViewController.m */; };
+		224CD1951A77AFB600933C32 /* ODGSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224CD18F1A77AFB600933C32 /* ODGSettingsViewController.xib */; };
+		224CD1991A77D85100933C32 /* ViperModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 224CD1971A77D85100933C32 /* ViperModel.xcdatamodeld */; };
+		224CD1A21A77DA2D00933C32 /* ODGCoreDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 224CD1A11A77DA2D00933C32 /* ODGCoreDataStore.m */; };
+		224CD1A81A77E4E600933C32 /* ODGDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 224CD1A71A77E4E600933C32 /* ODGDeck.m */; };
+		22B3BCB01A762A010010DF0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BCAF1A762A010010DF0A /* main.m */; };
+		22B3BCB31A762A010010DF0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BCB21A762A010010DF0A /* AppDelegate.m */; };
+		22B3BCB51A762A010010DF0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B3BCB41A762A010010DF0A /* Images.xcassets */; };
+		22B3BCB81A762A010010DF0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B3BCB61A762A010010DF0A /* LaunchScreen.xib */; };
+		22B3BCC41A762A010010DF0A /* Viper_trainingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BCC31A762A010010DF0A /* Viper_trainingTests.m */; };
+		22B3BCF71A7638990010DF0A /* ODGCardGridLocalDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BCE51A7638990010DF0A /* ODGCardGridLocalDataManager.m */; };
+		22B3BCF81A7638990010DF0A /* ODGCardGridInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BCE81A7638990010DF0A /* ODGCardGridInteractor.m */; };
+		22B3BCFA1A7638990010DF0A /* ODGCardGridPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BCED1A7638990010DF0A /* ODGCardGridPresenter.m */; };
+		22B3BCFC1A7638990010DF0A /* ODGCardGridWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BCF51A7638990010DF0A /* ODGCardGridWireFrame.m */; };
+		22B3BCFF1A763A1F0010DF0A /* ODGAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BCFE1A763A1F0010DF0A /* ODGAppDependencies.m */; };
+		22B3BD011A763CFF0010DF0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B3BD001A763CFF0010DF0A /* UIKit.framework */; };
+		22B3BD031A763D080010DF0A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B3BD021A763D080010DF0A /* CoreData.framework */; };
+		22B3BD081A763D860010DF0A /* ODGRootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BD071A763D860010DF0A /* ODGRootWireframe.m */; };
+		22B3BD0D1A7642E30010DF0A /* ODGCardListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BD0B1A7642E30010DF0A /* ODGCardListViewController.m */; };
+		22B3BD0E1A7642E30010DF0A /* ODGCardListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B3BD0C1A7642E30010DF0A /* ODGCardListViewController.xib */; };
+		22B3BD111A7645B70010DF0A /* ODGCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BD101A7645B70010DF0A /* ODGCardDeck.m */; };
+		22B3BD141A7648870010DF0A /* ODGCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BD131A7648870010DF0A /* ODGCard.m */; };
+		22B3BD171A76536F0010DF0A /* ODGCardDisplayDataCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BD161A76536F0010DF0A /* ODGCardDisplayDataCollector.m */; };
+		22B3BD1B1A765AD10010DF0A /* ODGCardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BD191A765AD10010DF0A /* ODGCardCollectionViewCell.m */; };
+		22B3BD1C1A765AD10010DF0A /* ODGCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B3BD1A1A765AD10010DF0A /* ODGCardCollectionViewCell.xib */; };
+		22B3BD581A7672E00010DF0A /* ODGShowCardAPIDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BD441A7672E00010DF0A /* ODGShowCardAPIDataManager.m */; };
+		22B3BD591A7672E00010DF0A /* ODGShowCardLocalDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BD471A7672E00010DF0A /* ODGShowCardLocalDataManager.m */; };
+		22B3BD5A1A7672E00010DF0A /* ODGShowCardInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BD4A1A7672E00010DF0A /* ODGShowCardInteractor.m */; };
+		22B3BD5B1A7672E00010DF0A /* ODGShowCardItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BD4C1A7672E00010DF0A /* ODGShowCardItem.m */; };
+		22B3BD5C1A7672E00010DF0A /* ODGShowCardPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BD4F1A7672E00010DF0A /* ODGShowCardPresenter.m */; };
+		22B3BD5D1A7672E00010DF0A /* ODGShowCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BD541A7672E00010DF0A /* ODGShowCardView.m */; };
+		22B3BD5E1A7672E00010DF0A /* ODGShowCardWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BD571A7672E00010DF0A /* ODGShowCardWireFrame.m */; };
+		22B3BD641A7689260010DF0A /* ODGShowCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B3BD631A7689260010DF0A /* ODGShowCardView.xib */; };
+		22B3BD671A7691FB0010DF0A /* ODGCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3BD661A7691FB0010DF0A /* ODGCardView.m */; };
+		22B3BD691A7699090010DF0A /* ODGCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B3BD681A7699090010DF0A /* ODGCardView.xib */; };
+		FD2E399F1A781DA300A8D30B /* NSArray+HOM.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2E399E1A781DA300A8D30B /* NSArray+HOM.m */; };
+		FD2E39A81A78369C00A8D30B /* ODGSettingsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD2E39A71A78369C00A8D30B /* ODGSettingsViewCell.xib */; };
+		FD9E709E1AA5CB5700217688 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9E709D1AA5CB5700217688 /* Deck.m */; };
+		FD9E70A11AA5DA6600217688 /* Deck+Deck_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9E70A01AA5DA6600217688 /* Deck+Deck_Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22B3BCBE1A762A010010DF0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B3BCA21A762A010010DF0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22B3BCA91A762A010010DF0A;
+			remoteInfo = "Viper training";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		224CD1811A77AFB600933C32 /* ODGSettingsDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGSettingsDataManager.h; sourceTree = "<group>"; };
+		224CD1821A77AFB600933C32 /* ODGSettingsDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGSettingsDataManager.m; sourceTree = "<group>"; };
+		224CD1841A77AFB600933C32 /* ODGSettingsInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGSettingsInteractor.h; sourceTree = "<group>"; };
+		224CD1851A77AFB600933C32 /* ODGSettingsInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGSettingsInteractor.m; sourceTree = "<group>"; };
+		224CD1861A77AFB600933C32 /* ODGSettingsPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGSettingsPresenter.h; sourceTree = "<group>"; };
+		224CD1871A77AFB600933C32 /* ODGSettingsPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGSettingsPresenter.m; sourceTree = "<group>"; };
+		224CD1881A77AFB600933C32 /* ODGSettingsWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGSettingsWireframe.h; sourceTree = "<group>"; };
+		224CD1891A77AFB600933C32 /* ODGSettingsWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGSettingsWireframe.m; sourceTree = "<group>"; };
+		224CD18B1A77AFB600933C32 /* ODGSettingsProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGSettingsProtocols.h; sourceTree = "<group>"; };
+		224CD18D1A77AFB600933C32 /* ODGSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGSettingsViewController.h; sourceTree = "<group>"; };
+		224CD18E1A77AFB600933C32 /* ODGSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGSettingsViewController.m; sourceTree = "<group>"; };
+		224CD18F1A77AFB600933C32 /* ODGSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ODGSettingsViewController.xib; sourceTree = "<group>"; };
+		224CD1981A77D85100933C32 /* ViperModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ViperModel.xcdatamodel; sourceTree = "<group>"; };
+		224CD1A01A77DA2D00933C32 /* ODGCoreDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGCoreDataStore.h; sourceTree = "<group>"; };
+		224CD1A11A77DA2D00933C32 /* ODGCoreDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGCoreDataStore.m; sourceTree = "<group>"; };
+		224CD1A61A77E4E600933C32 /* ODGDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGDeck.h; sourceTree = "<group>"; };
+		224CD1A71A77E4E600933C32 /* ODGDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGDeck.m; sourceTree = "<group>"; };
+		22B3BCAA1A762A010010DF0A /* Viper training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viper training.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B3BCAE1A762A010010DF0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22B3BCAF1A762A010010DF0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22B3BCB11A762A010010DF0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		22B3BCB21A762A010010DF0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		22B3BCB41A762A010010DF0A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		22B3BCB71A762A010010DF0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		22B3BCBD1A762A010010DF0A /* ViperTrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperTrainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B3BCC21A762A010010DF0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22B3BCC31A762A010010DF0A /* Viper_trainingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Viper_trainingTests.m; sourceTree = "<group>"; };
+		22B3BCE41A7638990010DF0A /* ODGCardGridLocalDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ODGCardGridLocalDataManager.h; path = Local/ODGCardGridLocalDataManager.h; sourceTree = "<group>"; };
+		22B3BCE51A7638990010DF0A /* ODGCardGridLocalDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ODGCardGridLocalDataManager.m; path = Local/ODGCardGridLocalDataManager.m; sourceTree = "<group>"; };
+		22B3BCE71A7638990010DF0A /* ODGCardGridInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGCardGridInteractor.h; sourceTree = "<group>"; };
+		22B3BCE81A7638990010DF0A /* ODGCardGridInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGCardGridInteractor.m; sourceTree = "<group>"; };
+		22B3BCEC1A7638990010DF0A /* ODGCardGridPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGCardGridPresenter.h; sourceTree = "<group>"; };
+		22B3BCED1A7638990010DF0A /* ODGCardGridPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGCardGridPresenter.m; sourceTree = "<group>"; };
+		22B3BCEF1A7638990010DF0A /* ODGCardGridProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGCardGridProtocols.h; sourceTree = "<group>"; };
+		22B3BCF41A7638990010DF0A /* ODGCardGridWireFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGCardGridWireFrame.h; sourceTree = "<group>"; };
+		22B3BCF51A7638990010DF0A /* ODGCardGridWireFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGCardGridWireFrame.m; sourceTree = "<group>"; };
+		22B3BCFD1A763A1F0010DF0A /* ODGAppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGAppDependencies.h; sourceTree = "<group>"; };
+		22B3BCFE1A763A1F0010DF0A /* ODGAppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGAppDependencies.m; sourceTree = "<group>"; };
+		22B3BD001A763CFF0010DF0A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		22B3BD021A763D080010DF0A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		22B3BD061A763D860010DF0A /* ODGRootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGRootWireframe.h; sourceTree = "<group>"; };
+		22B3BD071A763D860010DF0A /* ODGRootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGRootWireframe.m; sourceTree = "<group>"; };
+		22B3BD091A763FC90010DF0A /* ViperTraining-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViperTraining-Prefix.pch"; sourceTree = "<group>"; };
+		22B3BD0A1A7642E30010DF0A /* ODGCardListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGCardListViewController.h; sourceTree = "<group>"; };
+		22B3BD0B1A7642E30010DF0A /* ODGCardListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGCardListViewController.m; sourceTree = "<group>"; };
+		22B3BD0C1A7642E30010DF0A /* ODGCardListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ODGCardListViewController.xib; sourceTree = "<group>"; };
+		22B3BD0F1A7645B70010DF0A /* ODGCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGCardDeck.h; sourceTree = "<group>"; };
+		22B3BD101A7645B70010DF0A /* ODGCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGCardDeck.m; sourceTree = "<group>"; };
+		22B3BD121A7648870010DF0A /* ODGCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGCard.h; sourceTree = "<group>"; };
+		22B3BD131A7648870010DF0A /* ODGCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGCard.m; sourceTree = "<group>"; };
+		22B3BD151A76536F0010DF0A /* ODGCardDisplayDataCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGCardDisplayDataCollector.h; sourceTree = "<group>"; };
+		22B3BD161A76536F0010DF0A /* ODGCardDisplayDataCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGCardDisplayDataCollector.m; sourceTree = "<group>"; };
+		22B3BD181A765AD10010DF0A /* ODGCardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGCardCollectionViewCell.h; sourceTree = "<group>"; };
+		22B3BD191A765AD10010DF0A /* ODGCardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGCardCollectionViewCell.m; sourceTree = "<group>"; };
+		22B3BD1A1A765AD10010DF0A /* ODGCardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ODGCardCollectionViewCell.xib; sourceTree = "<group>"; };
+		22B3BD431A7672E00010DF0A /* ODGShowCardAPIDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGShowCardAPIDataManager.h; sourceTree = "<group>"; };
+		22B3BD441A7672E00010DF0A /* ODGShowCardAPIDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGShowCardAPIDataManager.m; sourceTree = "<group>"; };
+		22B3BD461A7672E00010DF0A /* ODGShowCardLocalDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGShowCardLocalDataManager.h; sourceTree = "<group>"; };
+		22B3BD471A7672E00010DF0A /* ODGShowCardLocalDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGShowCardLocalDataManager.m; sourceTree = "<group>"; };
+		22B3BD491A7672E00010DF0A /* ODGShowCardInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGShowCardInteractor.h; sourceTree = "<group>"; };
+		22B3BD4A1A7672E00010DF0A /* ODGShowCardInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGShowCardInteractor.m; sourceTree = "<group>"; };
+		22B3BD4B1A7672E00010DF0A /* ODGShowCardItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGShowCardItem.h; sourceTree = "<group>"; };
+		22B3BD4C1A7672E00010DF0A /* ODGShowCardItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGShowCardItem.m; sourceTree = "<group>"; };
+		22B3BD4E1A7672E00010DF0A /* ODGShowCardPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGShowCardPresenter.h; sourceTree = "<group>"; };
+		22B3BD4F1A7672E00010DF0A /* ODGShowCardPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGShowCardPresenter.m; sourceTree = "<group>"; };
+		22B3BD511A7672E00010DF0A /* ODGShowCardProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGShowCardProtocols.h; sourceTree = "<group>"; };
+		22B3BD531A7672E00010DF0A /* ODGShowCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGShowCardView.h; sourceTree = "<group>"; };
+		22B3BD541A7672E00010DF0A /* ODGShowCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGShowCardView.m; sourceTree = "<group>"; };
+		22B3BD561A7672E00010DF0A /* ODGShowCardWireFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODGShowCardWireFrame.h; sourceTree = "<group>"; };
+		22B3BD571A7672E00010DF0A /* ODGShowCardWireFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGShowCardWireFrame.m; sourceTree = "<group>"; };
+		22B3BD631A7689260010DF0A /* ODGShowCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ODGShowCardView.xib; sourceTree = "<group>"; };
+		22B3BD651A7691FB0010DF0A /* ODGCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ODGCardView.h; path = Modules/ODGShowCard/View/ODGCardView.h; sourceTree = "<group>"; };
+		22B3BD661A7691FB0010DF0A /* ODGCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ODGCardView.m; path = Modules/ODGShowCard/View/ODGCardView.m; sourceTree = "<group>"; };
+		22B3BD681A7699090010DF0A /* ODGCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ODGCardView.xib; sourceTree = "<group>"; };
+		E57E1FB172BE5D6C6D20C094 /* libPods-ViperTrainingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ViperTrainingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD2E399D1A781DA300A8D30B /* NSArray+HOM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HOM.h"; sourceTree = "<group>"; };
+		FD2E399E1A781DA300A8D30B /* NSArray+HOM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HOM.m"; sourceTree = "<group>"; };
+		FD2E39A71A78369C00A8D30B /* ODGSettingsViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ODGSettingsViewCell.xib; sourceTree = "<group>"; };
+		FD9E709C1AA5CB5700217688 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		FD9E709D1AA5CB5700217688 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		FD9E709F1AA5DA6600217688 /* Deck+Deck_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Deck+Deck_Extension.h"; sourceTree = "<group>"; };
+		FD9E70A01AA5DA6600217688 /* Deck+Deck_Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Deck+Deck_Extension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22B3BCA71A762A010010DF0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B3BD031A763D080010DF0A /* CoreData.framework in Frameworks */,
+				22B3BD011A763CFF0010DF0A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22B3BCBA1A762A010010DF0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EC7E50C0A43F7E8227288D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BD021A763D080010DF0A /* CoreData.framework */,
+				22B3BD001A763CFF0010DF0A /* UIKit.framework */,
+				E57E1FB172BE5D6C6D20C094 /* libPods-ViperTrainingTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		224CD17F1A77AFB600933C32 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				224CD1801A77AFB600933C32 /* DataManager */,
+				224CD1831A77AFB600933C32 /* Logic */,
+				224CD18A1A77AFB600933C32 /* Protocols */,
+				224CD18C1A77AFB600933C32 /* View */,
+			);
+			name = Settings;
+			path = ODGSettings;
+			sourceTree = "<group>";
+		};
+		224CD1801A77AFB600933C32 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				224CD1811A77AFB600933C32 /* ODGSettingsDataManager.h */,
+				224CD1821A77AFB600933C32 /* ODGSettingsDataManager.m */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		224CD1831A77AFB600933C32 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				224CD1841A77AFB600933C32 /* ODGSettingsInteractor.h */,
+				224CD1851A77AFB600933C32 /* ODGSettingsInteractor.m */,
+				224CD1861A77AFB600933C32 /* ODGSettingsPresenter.h */,
+				224CD1871A77AFB600933C32 /* ODGSettingsPresenter.m */,
+				224CD1881A77AFB600933C32 /* ODGSettingsWireframe.h */,
+				224CD1891A77AFB600933C32 /* ODGSettingsWireframe.m */,
+				224CD1A61A77E4E600933C32 /* ODGDeck.h */,
+				224CD1A71A77E4E600933C32 /* ODGDeck.m */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		224CD18A1A77AFB600933C32 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				224CD18B1A77AFB600933C32 /* ODGSettingsProtocols.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		224CD18C1A77AFB600933C32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				224CD18D1A77AFB600933C32 /* ODGSettingsViewController.h */,
+				224CD18E1A77AFB600933C32 /* ODGSettingsViewController.m */,
+				224CD18F1A77AFB600933C32 /* ODGSettingsViewController.xib */,
+				FD2E39A71A78369C00A8D30B /* ODGSettingsViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		224CD1961A77D83300933C32 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				224CD1971A77D85100933C32 /* ViperModel.xcdatamodeld */,
+				FD9E709C1AA5CB5700217688 /* Deck.h */,
+				FD9E709D1AA5CB5700217688 /* Deck.m */,
+				224CD1A01A77DA2D00933C32 /* ODGCoreDataStore.h */,
+				224CD1A11A77DA2D00933C32 /* ODGCoreDataStore.m */,
+				FD9E709F1AA5DA6600217688 /* Deck+Deck_Extension.h */,
+				FD9E70A01AA5DA6600217688 /* Deck+Deck_Extension.m */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		22B3BCA11A762A010010DF0A = {
+			isa = PBXGroup;
+			children = (
+				22B3BCAC1A762A010010DF0A /* Viper training */,
+				22B3BCC01A762A010010DF0A /* Viper trainingTests */,
+				22B3BCAB1A762A010010DF0A /* Products */,
+				1EC7E50C0A43F7E8227288D7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22B3BCAB1A762A010010DF0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BCAA1A762A010010DF0A /* Viper training.app */,
+				22B3BCBD1A762A010010DF0A /* ViperTrainingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22B3BCAC1A762A010010DF0A /* Viper training */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BCB11A762A010010DF0A /* AppDelegate.h */,
+				22B3BCB21A762A010010DF0A /* AppDelegate.m */,
+				22B3BCFD1A763A1F0010DF0A /* ODGAppDependencies.h */,
+				22B3BCFE1A763A1F0010DF0A /* ODGAppDependencies.m */,
+				22B3BD041A763D620010DF0A /* Common */,
+				22B3BCDD1A7638990010DF0A /* Modules */,
+				22B3BCB41A762A010010DF0A /* Images.xcassets */,
+				22B3BCB61A762A010010DF0A /* LaunchScreen.xib */,
+				22B3BCAD1A762A010010DF0A /* Supporting Files */,
+			);
+			path = "Viper training";
+			sourceTree = "<group>";
+		};
+		22B3BCAD1A762A010010DF0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BCAE1A762A010010DF0A /* Info.plist */,
+				22B3BCAF1A762A010010DF0A /* main.m */,
+				22B3BD091A763FC90010DF0A /* ViperTraining-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22B3BCC01A762A010010DF0A /* Viper trainingTests */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BCC31A762A010010DF0A /* Viper_trainingTests.m */,
+				22B3BCC11A762A010010DF0A /* Supporting Files */,
+			);
+			path = "Viper trainingTests";
+			sourceTree = "<group>";
+		};
+		22B3BCC11A762A010010DF0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BCC21A762A010010DF0A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22B3BCDD1A7638990010DF0A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BCDE1A7638990010DF0A /* Grid */,
+				22B3BD401A7672E00010DF0A /* ShowCard */,
+				224CD17F1A77AFB600933C32 /* Settings */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		22B3BCDE1A7638990010DF0A /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BCDF1A7638990010DF0A /* DataManager */,
+				22B3BCE61A7638990010DF0A /* Interactor */,
+				22B3BCEB1A7638990010DF0A /* Presenter */,
+				22B3BCEE1A7638990010DF0A /* Protocols */,
+				22B3BCF01A7638990010DF0A /* View */,
+				22B3BCF31A7638990010DF0A /* WireFrame */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		22B3BCDF1A7638990010DF0A /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BCE41A7638990010DF0A /* ODGCardGridLocalDataManager.h */,
+				22B3BCE51A7638990010DF0A /* ODGCardGridLocalDataManager.m */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		22B3BCE61A7638990010DF0A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BCE71A7638990010DF0A /* ODGCardGridInteractor.h */,
+				22B3BCE81A7638990010DF0A /* ODGCardGridInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		22B3BCEB1A7638990010DF0A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BCEC1A7638990010DF0A /* ODGCardGridPresenter.h */,
+				22B3BCED1A7638990010DF0A /* ODGCardGridPresenter.m */,
+				22B3BD0F1A7645B70010DF0A /* ODGCardDeck.h */,
+				22B3BD101A7645B70010DF0A /* ODGCardDeck.m */,
+				22B3BD121A7648870010DF0A /* ODGCard.h */,
+				22B3BD131A7648870010DF0A /* ODGCard.m */,
+				22B3BD151A76536F0010DF0A /* ODGCardDisplayDataCollector.h */,
+				22B3BD161A76536F0010DF0A /* ODGCardDisplayDataCollector.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		22B3BCEE1A7638990010DF0A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BCEF1A7638990010DF0A /* ODGCardGridProtocols.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		22B3BCF01A7638990010DF0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BD0A1A7642E30010DF0A /* ODGCardListViewController.h */,
+				22B3BD0B1A7642E30010DF0A /* ODGCardListViewController.m */,
+				22B3BD0C1A7642E30010DF0A /* ODGCardListViewController.xib */,
+				22B3BD181A765AD10010DF0A /* ODGCardCollectionViewCell.h */,
+				22B3BD191A765AD10010DF0A /* ODGCardCollectionViewCell.m */,
+				22B3BD1A1A765AD10010DF0A /* ODGCardCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22B3BCF31A7638990010DF0A /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BCF41A7638990010DF0A /* ODGCardGridWireFrame.h */,
+				22B3BCF51A7638990010DF0A /* ODGCardGridWireFrame.m */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		22B3BD041A763D620010DF0A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FD2E39A01A781DA800A8D30B /* Categories */,
+				224CD1961A77D83300933C32 /* Store */,
+				22B3BD051A763D6F0010DF0A /* View */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		22B3BD051A763D6F0010DF0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BD061A763D860010DF0A /* ODGRootWireframe.h */,
+				22B3BD071A763D860010DF0A /* ODGRootWireframe.m */,
+				22B3BD651A7691FB0010DF0A /* ODGCardView.h */,
+				22B3BD661A7691FB0010DF0A /* ODGCardView.m */,
+				22B3BD681A7699090010DF0A /* ODGCardView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		22B3BD401A7672E00010DF0A /* ShowCard */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BD411A7672E00010DF0A /* DataManager */,
+				22B3BD481A7672E00010DF0A /* Interactor */,
+				22B3BD4D1A7672E00010DF0A /* Presenter */,
+				22B3BD501A7672E00010DF0A /* Protocols */,
+				22B3BD521A7672E00010DF0A /* View */,
+				22B3BD551A7672E00010DF0A /* WireFrame */,
+			);
+			name = ShowCard;
+			path = ODGShowCard;
+			sourceTree = "<group>";
+		};
+		22B3BD411A7672E00010DF0A /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BD421A7672E00010DF0A /* API */,
+				22B3BD451A7672E00010DF0A /* Local */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		22B3BD421A7672E00010DF0A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BD431A7672E00010DF0A /* ODGShowCardAPIDataManager.h */,
+				22B3BD441A7672E00010DF0A /* ODGShowCardAPIDataManager.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		22B3BD451A7672E00010DF0A /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BD461A7672E00010DF0A /* ODGShowCardLocalDataManager.h */,
+				22B3BD471A7672E00010DF0A /* ODGShowCardLocalDataManager.m */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		22B3BD481A7672E00010DF0A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BD491A7672E00010DF0A /* ODGShowCardInteractor.h */,
+				22B3BD4A1A7672E00010DF0A /* ODGShowCardInteractor.m */,
+				22B3BD4B1A7672E00010DF0A /* ODGShowCardItem.h */,
+				22B3BD4C1A7672E00010DF0A /* ODGShowCardItem.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		22B3BD4D1A7672E00010DF0A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BD4E1A7672E00010DF0A /* ODGShowCardPresenter.h */,
+				22B3BD4F1A7672E00010DF0A /* ODGShowCardPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		22B3BD501A7672E00010DF0A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BD511A7672E00010DF0A /* ODGShowCardProtocols.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		22B3BD521A7672E00010DF0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BD531A7672E00010DF0A /* ODGShowCardView.h */,
+				22B3BD541A7672E00010DF0A /* ODGShowCardView.m */,
+				22B3BD631A7689260010DF0A /* ODGShowCardView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22B3BD551A7672E00010DF0A /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				22B3BD561A7672E00010DF0A /* ODGShowCardWireFrame.h */,
+				22B3BD571A7672E00010DF0A /* ODGShowCardWireFrame.m */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		FD2E39A01A781DA800A8D30B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FD2E399D1A781DA300A8D30B /* NSArray+HOM.h */,
+				FD2E399E1A781DA300A8D30B /* NSArray+HOM.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22B3BCA91A762A010010DF0A /* Viper training */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22B3BCC71A762A010010DF0A /* Build configuration list for PBXNativeTarget "Viper training" */;
+			buildPhases = (
+				22B3BCA61A762A010010DF0A /* Sources */,
+				22B3BCA71A762A010010DF0A /* Frameworks */,
+				22B3BCA81A762A010010DF0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Viper training";
+			productName = "Viper training";
+			productReference = 22B3BCAA1A762A010010DF0A /* Viper training.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22B3BCBC1A762A010010DF0A /* ViperTrainingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22B3BCCA1A762A010010DF0A /* Build configuration list for PBXNativeTarget "ViperTrainingTests" */;
+			buildPhases = (
+				22B3BCB91A762A010010DF0A /* Sources */,
+				22B3BCBA1A762A010010DF0A /* Frameworks */,
+				22B3BCBB1A762A010010DF0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22B3BCBF1A762A010010DF0A /* PBXTargetDependency */,
+			);
+			name = ViperTrainingTests;
+			productName = "Viper trainingTests";
+			productReference = 22B3BCBD1A762A010010DF0A /* ViperTrainingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22B3BCA21A762A010010DF0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Odigeo;
+				TargetAttributes = {
+					22B3BCA91A762A010010DF0A = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					22B3BCBC1A762A010010DF0A = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 22B3BCA91A762A010010DF0A;
+					};
+				};
+			};
+			buildConfigurationList = 22B3BCA51A762A010010DF0A /* Build configuration list for PBXProject "Viper training" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22B3BCA11A762A010010DF0A;
+			productRefGroup = 22B3BCAB1A762A010010DF0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22B3BCA91A762A010010DF0A /* Viper training */,
+				22B3BCBC1A762A010010DF0A /* ViperTrainingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22B3BCA81A762A010010DF0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B3BCB81A762A010010DF0A /* LaunchScreen.xib in Resources */,
+				22B3BD1C1A765AD10010DF0A /* ODGCardCollectionViewCell.xib in Resources */,
+				22B3BD641A7689260010DF0A /* ODGShowCardView.xib in Resources */,
+				22B3BD0E1A7642E30010DF0A /* ODGCardListViewController.xib in Resources */,
+				22B3BCB51A762A010010DF0A /* Images.xcassets in Resources */,
+				22B3BD691A7699090010DF0A /* ODGCardView.xib in Resources */,
+				FD2E39A81A78369C00A8D30B /* ODGSettingsViewCell.xib in Resources */,
+				224CD1951A77AFB600933C32 /* ODGSettingsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22B3BCBB1A762A010010DF0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22B3BCA61A762A010010DF0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B3BCFC1A7638990010DF0A /* ODGCardGridWireFrame.m in Sources */,
+				22B3BD0D1A7642E30010DF0A /* ODGCardListViewController.m in Sources */,
+				22B3BD5A1A7672E00010DF0A /* ODGShowCardInteractor.m in Sources */,
+				FD9E70A11AA5DA6600217688 /* Deck+Deck_Extension.m in Sources */,
+				22B3BCB31A762A010010DF0A /* AppDelegate.m in Sources */,
+				22B3BCFF1A763A1F0010DF0A /* ODGAppDependencies.m in Sources */,
+				22B3BCB01A762A010010DF0A /* main.m in Sources */,
+				22B3BD671A7691FB0010DF0A /* ODGCardView.m in Sources */,
+				224CD1941A77AFB600933C32 /* ODGSettingsViewController.m in Sources */,
+				22B3BD5B1A7672E00010DF0A /* ODGShowCardItem.m in Sources */,
+				22B3BCF71A7638990010DF0A /* ODGCardGridLocalDataManager.m in Sources */,
+				22B3BD081A763D860010DF0A /* ODGRootWireframe.m in Sources */,
+				224CD1901A77AFB600933C32 /* ODGSettingsDataManager.m in Sources */,
+				224CD1921A77AFB600933C32 /* ODGSettingsPresenter.m in Sources */,
+				22B3BD111A7645B70010DF0A /* ODGCardDeck.m in Sources */,
+				22B3BD1B1A765AD10010DF0A /* ODGCardCollectionViewCell.m in Sources */,
+				224CD1931A77AFB600933C32 /* ODGSettingsWireframe.m in Sources */,
+				22B3BD5D1A7672E00010DF0A /* ODGShowCardView.m in Sources */,
+				224CD1991A77D85100933C32 /* ViperModel.xcdatamodeld in Sources */,
+				22B3BD581A7672E00010DF0A /* ODGShowCardAPIDataManager.m in Sources */,
+				224CD1911A77AFB600933C32 /* ODGSettingsInteractor.m in Sources */,
+				22B3BD171A76536F0010DF0A /* ODGCardDisplayDataCollector.m in Sources */,
+				FD2E399F1A781DA300A8D30B /* NSArray+HOM.m in Sources */,
+				224CD1A81A77E4E600933C32 /* ODGDeck.m in Sources */,
+				FD9E709E1AA5CB5700217688 /* Deck.m in Sources */,
+				22B3BCFA1A7638990010DF0A /* ODGCardGridPresenter.m in Sources */,
+				22B3BD141A7648870010DF0A /* ODGCard.m in Sources */,
+				224CD1A21A77DA2D00933C32 /* ODGCoreDataStore.m in Sources */,
+				22B3BD591A7672E00010DF0A /* ODGShowCardLocalDataManager.m in Sources */,
+				22B3BD5C1A7672E00010DF0A /* ODGShowCardPresenter.m in Sources */,
+				22B3BD5E1A7672E00010DF0A /* ODGShowCardWireFrame.m in Sources */,
+				22B3BCF81A7638990010DF0A /* ODGCardGridInteractor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22B3BCB91A762A010010DF0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B3BCC41A762A010010DF0A /* Viper_trainingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22B3BCBF1A762A010010DF0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22B3BCA91A762A010010DF0A /* Viper training */;
+			targetProxy = 22B3BCBE1A762A010010DF0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22B3BCB61A762A010010DF0A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22B3BCB71A762A010010DF0A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22B3BCC51A762A010010DF0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		22B3BCC61A762A010010DF0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22B3BCC81A762A010010DF0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Viper training/ViperTraining-Prefix.pch";
+				INFOPLIST_FILE = "Viper training/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		22B3BCC91A762A010010DF0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Viper training/ViperTraining-Prefix.pch";
+				INFOPLIST_FILE = "Viper training/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		22B3BCCB1A762A010010DF0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Viper trainingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viper training.app/Viper training";
+			};
+			name = Debug;
+		};
+		22B3BCCC1A762A010010DF0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Viper trainingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viper training.app/Viper training";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22B3BCA51A762A010010DF0A /* Build configuration list for PBXProject "Viper training" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22B3BCC51A762A010010DF0A /* Debug */,
+				22B3BCC61A762A010010DF0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22B3BCC71A762A010010DF0A /* Build configuration list for PBXNativeTarget "Viper training" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22B3BCC81A762A010010DF0A /* Debug */,
+				22B3BCC91A762A010010DF0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22B3BCCA1A762A010010DF0A /* Build configuration list for PBXNativeTarget "ViperTrainingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22B3BCCB1A762A010010DF0A /* Debug */,
+				22B3BCCC1A762A010010DF0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		224CD1971A77D85100933C32 /* ViperModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				224CD1981A77D85100933C32 /* ViperModel.xcdatamodel */,
+			);
+			currentVersion = 224CD1981A77D85100933C32 /* ViperModel.xcdatamodel */;
+			path = ViperModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 22B3BCA21A762A010010DF0A /* Project object */;
+}
